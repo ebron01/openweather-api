@@ -6,7 +6,7 @@ http://localhost:4444/api/weather/texas?country=US&units=imperial
 
 
 
-http://localhost:4444/api/history/texas?start=2023-09-18&end=2023-09-20
+
 http://localhost:4444/api/history/texas&country=US?start=2023-09-10&end=2023-09-11
 
 
