@@ -1,0 +1,38 @@
+{% extends "shared/layout.html" %}
+
+{% block content %}
+
+<h1><span class="font-semi-bold">Development Assessment: FASTAPI Example</span>
+</h1>
+
+<p class="lead">
+    <ul>
+        <li>
+            <strong>Daily weather forecast.</strong><br>
+            Fill in "city" and "country" (Country as two letters Ex:
+            Türkiye - TR), "units" can be "metric", "imperial" and
+            "standard". "country" and "units" are optional.<br>
+            <strong>Usage :</strong> GET
+            /api/<strong>weather</strong>/{city}?country={country}?units={units}<br>
+            <br>
+        </li>
+        <li>
+            <strong>Forecast of following five days.</strong><br>
+            Fill in "city" and "country" (Country as two letters Ex: Türkiye -
+            TR), "units" can be "metric", "imperial" and "standard". "country"
+            and "units" are optional.<br>
+            <strong>Usage : </strong> GET
+            /api/<strong>forecast</strong>
+            /{city}?country={country}?units={units}
+        </li>
+
+        <li>
+            <strong>History for a defined time slot.</strong>
+            Dates must be in following format.
+            <strong>Usage : </strong> GET /api/<strong>history</strong>/texas&country=US?start=2023-09-10&end=2023-09-11
+        </li>
+
+    </ul>
+</p>
+
+{% endblock %}
